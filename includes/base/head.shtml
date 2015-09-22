@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="static/css/style.css">
 
     <!-- Pre document development/production JavaScript. -->
-    <script src="../node_modules/requirejs/require.js"></script>
+    <script src="node_modules/requirejs/require.js"></script>
 
 </head>
 <body>

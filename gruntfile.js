@@ -98,8 +98,8 @@ module.exports = function(grunt) {
             compile: {
                 options: {
                     almond: true,
-                    baseUrl: '<%= sourceFolder %>js/project',
-                    name: 'main',
+                    baseUrl: '',
+                    name: '<%= sourceFolder %>js/project/main',
                     optimize: 'uglify',
                     out: '<%= staticFolder %>js/require.min.js',
                     mainConfigFile: '<%= sourceFolder %>js/project/config/require.js'
@@ -155,7 +155,7 @@ module.exports = function(grunt) {
     // --------------------------------------------------------
     // Minify all CSS and JavaScript.
     // --------------------------------------------------------
-    grunt.registerTask('compile-all', ['analyse-js', 'compile-js', 'compile-requirejs', 'compile-css']);
+    grunt.registerTask('compile-all', ['analyse-js', 'compile-requirejs', 'compile-css']);
 
     // --------------------------------------------------------
     // Complie CSS.
